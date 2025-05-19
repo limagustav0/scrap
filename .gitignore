@@ -1,0 +1,64 @@
+# Arquivos sensíveis
+credentials.json
+.env
+secrets.json
+*.key
+*.pem
+
+# Arquivos de ambiente virtual Python
+venv/
+.env/
+*.venv/
+env/
+*env*/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de log
+*.log
+crawler.log
+script1.log
+script2.log
+
+# Arquivos gerados pelo script
+sem_dados_urls.json
+
+# Arquivos temporários do Windows
+Thumbs.db
+.DS_Store
+*.bak
+*.tmp
+*.swp
+
+# Diretórios de build e dependências
+build/
+dist/
+*.egg-info/
+node_modules/
+
+# Arquivos do Playwright (cache e navegadores)
+playwright/.cache/
+
+# Arquivos de IDE/Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de cache do Python
+*.cache/
+.pytest_cache/
+.coverage
+
+# Arquivos de backup
+*~
+*.backup
+
+# Arquivos de teste ou saída
+*.csv
+*.xlsx
+*.jsonl
+output/
+temp/
