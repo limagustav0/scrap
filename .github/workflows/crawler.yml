@@ -1,4 +1,4 @@
-name: Run Web Crawler
+name: Run Web Crawler Marketplace
 
 on:
   schedule:
