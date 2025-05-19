@@ -2,12 +2,13 @@ name: Run Web Crawler Marketplace
 
 on:
   schedule:
-    - cron: '*/40 * * * *' 
-  workflow_dispatch: 
+    - cron: '*/40 * * * *'
+  workflow_dispatch:
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    environment: production  # Substitua por nome do seu ambiente
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -27,8 +28,10 @@ jobs:
       - name: Verify Playwright installation
         run: |
           playwright --version
-          ls -la /home/runner/.cache/ms-playwright/  # Verifica se os binários foram baixados
+          ls -la /home/runner/.cache/ms-playwright/
 
       - name: Run crawler
+        env:
+          API_ENDPOINT: ${{ env.ENDPOINT }}  # Mapeia ENDPOINT do ambiente para API_ENDPOINT
         run: |
           python execucao.py
