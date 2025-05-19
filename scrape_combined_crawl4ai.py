@@ -363,19 +363,16 @@ async def crawl_url(crawler, url, max_retries=3):
 
 
 async def send_to_api(data):
-    """Envia os dados dos vendedores para a API (POST)."""
-    api_url = 'https://streamlit-apirest.onrender.com/api/products'
+    api_url = os.getenv("API_ENDPOINT")
+    if not api_url:
+        raise ValueError("A variável de ambiente API_ENDPOINT não está definida.")
     async with aiohttp.ClientSession() as session:
         try:
-            async with session.post(
-                api_url,
-                json=data,
-                headers={'Content-Type': 'application/json'},
-            ) as response:
-                print(f'Status da resposta (POST): {response.status}')
+            async with session.post(api_url, json=data, headers={'Content-Type': 'application/json'}) as response:
+                print(f"Status da resposta (POST): {response.status}")
                 return response.status
         except Exception as e:
-            print(f'Erro ao enviar dados para a API (POST): {e}')
+            print(f"Erro ao enviar dados para a API (POST): {e}")
             return None
 
 
