@@ -25,7 +25,7 @@ async def run_combined_crawler():
             'https://www.amazon.com.br/Acidificando-Juba-Acidificante-Widi-500ml/dp/B0D389WN7Z/?_encoding=UTF8&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d',
             'https://www.amazon.com.br/Widicare-Encaracolando-Juba-Creme-Pentear/dp/B0BGJ5RB67/ref=sr_1_1?rdc=1&s=beauty&sr=1-1',
             'https://www.mercadolivre.com.br/cadiveu-plastica-dos-fios-selagem-termica-passo-2/p/MLB20549848/s',
-            
+            'https://www.mercadolivre.com.br/wella-mascara-oil-reflections-500ml/p/MLB19512787/s?pdp_filters=item_id%3AMLB4395639466'
         ]
         await process_urls(combined_urls)
     except Exception as e:
