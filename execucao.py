@@ -33,6 +33,8 @@ async def run_combined_crawler():
             'https://www.belezanaweb.com.br/deva-curl-one-condition-condicionador-355ml/ofertas-marketplace',
             'https://www.belezanaweb.com.br/cadiveu-professional-nutri-glow-mascara-capilar-200ml/ofertas-marketplace',
             'https://www.belezanaweb.com.br/deva-curl-heaven-in-hair-mascara-capilar-250g/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/deva-curl-supercream-creme-modelador-250g/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-essentials-quartzo-shine-leavein-protetor-termico-200ml/ofertas-marketplace',
         ]
         await process_urls(combined_urls)
     except Exception as e:
