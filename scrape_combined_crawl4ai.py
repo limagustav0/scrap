@@ -248,7 +248,7 @@ def extract_data_from_markdown_meli(markdown):
                 )  # Usa item_id como SKU específico do vendedor
                 key_loja = nome_loja.lower().replace(' ', '_').replace('.', '')
                 loja = {
-                    'sku': item_id,
+                    'sku': sku,
                     'loja': nome_loja,
                     'preco_final': preco_final,
                     'data_hora': datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
