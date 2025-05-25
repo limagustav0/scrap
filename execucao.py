@@ -35,6 +35,7 @@ async def run_combined_crawler():
             'https://www.belezanaweb.com.br/deva-curl-heaven-in-hair-mascara-capilar-250g/ofertas-marketplace',
             'https://www.belezanaweb.com.br/deva-curl-supercream-creme-modelador-250g/ofertas-marketplace',
             'https://www.belezanaweb.com.br/cadiveu-essentials-quartzo-shine-leavein-protetor-termico-200ml/ofertas-marketplace',
+            'https://www.mercadolivre.com.br/wella-mascara-oil-reflections-500ml/p/MLB19512787/s',
         ]
         await process_urls(combined_urls)
     except Exception as e:
