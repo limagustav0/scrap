@@ -35,7 +35,18 @@ async def run_combined_crawler():
             'https://www.belezanaweb.com.br/deva-curl-heaven-in-hair-mascara-capilar-250g/ofertas-marketplace',
             'https://www.belezanaweb.com.br/deva-curl-supercream-creme-modelador-250g/ofertas-marketplace',
             'https://www.belezanaweb.com.br/cadiveu-essentials-quartzo-shine-leavein-protetor-termico-200ml/ofertas-marketplace',
-            'https://www.mercadolivre.com.br/wella-mascara-oil-reflections-500ml/p/MLB19512787/s',
+            'https://www.belezanaweb.com.br/senscience-inner-restore-intensif-mascara-capilar-de-500ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/senscience-inner-restore-mascara-capilar-500ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/senscience-inner-restore-deep-moisturizing-conditioner-mascara-200ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/senscience-cpr-step-3-condicionador-1l/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/widi-care-condicionando-a-juba-hidronutritivo-condicionador-500ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/widi-care-ondulando-a-juba-creme-de-pentear-500ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/widi-care-modelando-a-juba-geleia-seladora-300g/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/widi-care-encrespando-a-juba-creme-de-pentear-500ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/widi-care-juba-mascara-capilar-500g/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/joico-moisture-recovery-moisturizing-smart-release-shampoo-1l/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/joico-kpak-to-repair-damage-hair-smart-release-shampoo-300ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/deva-curl-supercream-creme-modelador-500g/ofertas-marketplace',
         ]
         await process_urls(combined_urls)
     except Exception as e:
