@@ -364,7 +364,7 @@ async def crawl_url(crawler, url, max_retries=3):
 
 async def send_to_api(data):
     """Envia os dados dos vendedores para a API (POST)."""
-    api_url = 'http://34.233.35.91:8000/api/products'
+    api_url = 'https://www.price.kamico.com.br/api/products'
     async with aiohttp.ClientSession() as session:
         try:
             async with session.post(api_url, json=data, headers={'Content-Type': 'application/json'}) as response:
