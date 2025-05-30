@@ -47,6 +47,16 @@ async def run_combined_crawler():
             'https://www.belezanaweb.com.br/joico-moisture-recovery-moisturizing-smart-release-shampoo-1l/ofertas-marketplace',
             'https://www.belezanaweb.com.br/joico-kpak-to-repair-damage-hair-smart-release-shampoo-300ml/ofertas-marketplace',
             'https://www.belezanaweb.com.br/deva-curl-supercream-creme-modelador-500g/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/deva-curl-one-condition-decadence-condicionador-355ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-essentials-quartzo-shine-proteina-condicionante-preshampoo-200ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-essentials-quartzo-shine-by-boca-rosa-hair-oleo-capilar-quartzo-liquido-65ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-profissional-glamour-essentials-serum-capilar-65ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-professional-nutri-glow-leavein-nutritivo-215ml/ofertas-marketplace',
+            'www.belezanaweb.com.br/cadiveu-professional-glamour-essentials-fluido-condicionante-200ml/ofertas-marketplace',
+            'www.belezanaweb.com.br/kit-cadiveu-professional-essentials-hair-remedy-home-care-3-produtos/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-professional-nutri-glow-shampoo-250ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-professional-acai-oil-oleo-de-tratamento-60ml/ofertas-marketplace',
+            'https://www.belezanaweb.com.br/cadiveu-professional-acai-oil-oleo-de-acai-110ml/ofertas-marketplace',
         ]
         await process_urls(combined_urls)
     except Exception as e:
